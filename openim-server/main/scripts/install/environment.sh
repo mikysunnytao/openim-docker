@@ -46,7 +46,7 @@ def "DATA_DIR" "${OPENIM_ROOT}"
 def "USER" "root"
 
 # 设置统一的密码，方便记忆
-def "PASSWORD" "openIM123"
+def "PASSWORD" "Feng@029"
 
 # 设置统一的数据库名称，方便管理
 def "DATABASE_NAME" "openIM_v3"
@@ -236,7 +236,7 @@ def "RETAIN_CHAT_RECORDS" "365"       # 保留聊天记录
 readonly CHAT_RECORDS_CLEAR_TIME=${CHAT_RECORDS_CLEAR_TIME:-'0 2 * * 3'}
 # 消息销毁时间
 readonly MSG_DESTRUCT_TIME=${MSG_DESTRUCT_TIME:-'0 2 * * *'}
-def "SECRET" "${PASSWORD}"      # 密钥
+def "SECRET" "Feng@029"      # 密钥
 def "TOKEN_EXPIRE" "90"         # Token到期时间
 def "FRIEND_VERIFY" "false"     # 朋友验证
 def "IOS_PUSH_SOUND" "xxx"      # IOS推送声音
