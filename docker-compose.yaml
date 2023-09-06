@@ -2,17 +2,17 @@
 version: '3'
 
 services:
-  mysql:
-    image: mysql:5.7
-    ports:
-      - "${MYSQL_PORT}:3306"
-    container_name: mysql
-    volumes:
-      - "${DATA_DIR}/components/mysql/data:/var/lib/mysql"
-      - "/etc/localtime:/etc/localtime"
-    environment:
-      MYSQL_ROOT_PASSWORD: "${MYSQL_PASSWORD}"
-    restart: always
+  # mysql:
+  #   image: mysql:5.7
+  #   ports:
+  #     - "${MYSQL_PORT}:3306"
+  #   container_name: mysql
+  #   volumes:
+  #     - "${DATA_DIR}/components/mysql/data:/var/lib/mysql"
+  #     - "/etc/localtime:/etc/localtime"
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: "${MYSQL_PASSWORD}"
+  #   restart: always
 
   mongodb:
     image: mongo:6.0.2
@@ -126,7 +126,7 @@ services:
     depends_on:
       - zookeeper
       - kafka
-      - mysql
+      # - mysql
       - mongodb
       - redis
       - minio
@@ -157,7 +157,7 @@ services:
     restart: always
     user: root:root
     depends_on:
-      - mysql
+      # - mysql
       - mongodb
       - redis
       - minio
