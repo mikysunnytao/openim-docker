@@ -46,7 +46,7 @@ def "DATA_DIR" "${OPENIM_ROOT}"
 def "USER" "root"
 
 # 设置统一的密码，方便记忆
-def "PASSWORD" "Feng@029"
+def "PASSWORD" "Feng5411"
 
 # 设置统一的数据库名称，方便管理
 def "DATABASE_NAME" "openIM_v3"
