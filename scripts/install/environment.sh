@@ -106,8 +106,8 @@ def "ZOOKEEPER_PASSWORD" ""              # Zookeeper的密码
 ###################### MySQL 配置信息 ######################
 def "MYSQL_PORT" "3306"                 # MySQL的端口
 def "MYSQL_ADDRESS" "127.0.0.1"          # MySQL的地址
-def "MYSQL_USERNAME" "openim"           # MySQL的用户名
-def "MYSQL_PASSWORD" "85dfFBP7mG6ETJXY"       # MySQL的密码
+def "MYSQL_USERNAME" "root"           # MySQL的用户名
+def "MYSQL_PASSWORD" "4ab959165a1c6d3d"       # MySQL的密码
 def "MYSQL_DATABASE" "openim"  # MySQL的数据库名
 def "MYSQL_MAX_OPEN_CONN" "1000"         # 最大打开的连接数
 def "MYSQL_MAX_IDLE_CONN" "100"          # 最大空闲连接数
