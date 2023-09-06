@@ -106,8 +106,8 @@ services:
 
   openim-server:
     # image: ghcr.io/openimsdk/openim-server:${SERVER_BRANCH}
-    image: registry.cn-hangzhou.aliyuncs.com/openimsdk/openim-server:${SERVER_BRANCH}
-    # image: openim/openim-server:${SERVER_BRANCH}
+    # image: registry.cn-hangzhou.aliyuncs.com/openimsdk/openim-server:${SERVER_BRANCH}
+    image: openim/openim-server:${SERVER_BRANCH}
 #    build: .
     container_name: openim-server
     ports:
@@ -139,8 +139,8 @@ services:
 
   openim-chat:
     # image: ghcr.io/openimsdk/openim-chat:${CHAT_BRANCH}
-    image: registry.cn-hangzhou.aliyuncs.com/openimsdk/openim-chat:${CHAT_BRANCH}
-    # image: ghcr.io/openimsdk/openim-chat:${CHAT_BRANCH}
+    # image: registry.cn-hangzhou.aliyuncs.com/openimsdk/openim-chat:${CHAT_BRANCH}
+    image: ghcr.io/openimsdk/openim-chat:${CHAT_BRANCH}
     container_name: openim-chat
     healthcheck:
       test: ["CMD", "/openim/openim-chat/scripts/check_all.sh"]
